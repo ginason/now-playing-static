@@ -288,12 +288,15 @@ main{
 .movie:first-child {
   width: 100%;
 }
+.movie:first-child .movie-image{
+  width: 130%;
+}
 
 .movie-overview{
   display: none;
 }
 
-.movie > .movie-details > .movie-overview:nth-child(1){
+.movie:nth-child(1) .movie-overview{
   display: block;
 }
 
@@ -305,11 +308,11 @@ main{
   display: block;
 }
 
-/*.movie-image .movie-backdrop:first-child{
+.movie:first-child .movie-backdrop{
+  display: block;
+}
+.movie:first-child .movie-poster{
   display: none;
 }
-.movie-image .movie-poster:first-child{
-  display: block;
-}*/
 
 }
